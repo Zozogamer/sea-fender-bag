@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#C45D52">
+  <title>Sea Funder bag | Sea fender bag - Le rangement hermétique né de la mer</title>
+  <meta name="description" content="Sea Funder bag, aussi appelé Sea fender bag : un rangement hermétique fabriqué à partir de pare-battages marins recyclés pour bateau, kayak, paddle et voyage.">
+  <meta name="keywords" content="Sea Funder bag, Sea fender bag, Sea bumper bag, pare-battage, rangement hermétique, sac étanche, bag marin, kayak, paddle, bateau">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Sea Funder bag | Sea fender bag">
+  <meta property="og:description" content="Un rangement hermétique né de la mer, fabriqué à partir de pare-battages marins recyclés.">
+  <meta property="og:image" content="assets/images/concept-beach.png">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://zozogamer.github.io/sea-fender-bag/">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Brand",
+      "name": "Sea fender bag",
+      "alternateName": ["Sea Funder bag", "Sea bumper bag"],
+      "description": "Rangement hermétique fabriqué à partir de pare-battages marins recyclés.",
+      "logo": "assets/images/logo.png"
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ SVG GLOBAL DEFS ============ -->
+  <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
+    <defs>
+      <linearGradient id="whiteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#e8e8e8"/>
+        <stop offset="30%" stop-color="#ffffff"/>
+        <stop offset="70%" stop-color="#f5f5f5"/>
+        <stop offset="100%" stop-color="#d8d8d8"/>
+      </linearGradient>
+      <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#9a2a22"/>
+        <stop offset="40%" stop-color="#e53935"/>
+        <stop offset="70%" stop-color="#c62828"/>
+        <stop offset="100%" stop-color="#7a1f18"/>
+      </linearGradient>
+      <pattern id="knurlPat" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+        <rect width="6" height="6" fill="#c62828"/>
+        <line x1="0" y1="0" x2="0" y2="6" stroke="#5c1410" stroke-width="0.7" opacity="0.7"/>
+        <line x1="3" y1="0" x2="3" y2="6" stroke="#5c1410" stroke-width="0.7" opacity="0.7"/>
+      </pattern>
+      <radialGradient id="sphereGrad" cx="35%" cy="30%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="60%" stop-color="#f0f0f0"/>
+        <stop offset="100%" stop-color="#bababa"/>
+      </radialGradient>
+      <!-- Anciens IDs utilisés par les SVG des modèles -->
+      <linearGradient id="white" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#e8e8e8"/>
+        <stop offset="30%" stop-color="#ffffff"/>
+        <stop offset="70%" stop-color="#f5f5f5"/>
+        <stop offset="100%" stop-color="#d8d8d8"/>
+      </linearGradient>
+      <pattern id="knurl" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+        <rect width="6" height="6" fill="#c62828"/>
+        <line x1="0" y1="0" x2="0" y2="6" stroke="#5c1410" stroke-width="0.7" opacity="0.7"/>
+        <line x1="3" y1="0" x2="3" y2="6" stroke="#5c1410" stroke-width="0.7" opacity="0.7"/>
+      </pattern>
+    </defs>
+  </svg>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand">
+        <img src="assets/images/logo.png" alt="Sea fender bag" class="nav__logo" onerror="this.style.display='none'">
+        <span>Sea fender bag</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#concept">Concept</a></li>
+        <li><a href="#produit">Produit</a></li>
+        <li><a href="#usages">Usages</a></li>
+        <li><a href="#modeles">Modèles</a></li>
+        <li><a href="panier.html">Panier <span data-cart-count>0</span></a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="hero">
+    <div class="hero__bg" style="background-image: url('assets/images/pradet.jpg');"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <img src="assets/images/logo.png" alt="" class="hero__logo" onerror="this.style.display='none'">
+      <h1 class="hero__title">Sea fender bag</h1>
+      <p class="hero__tagline">Le rangement hermétique né de la mer.</p>
+      <div class="hero__cta">
+        <a href="#concept" class="btn btn--ghost">Découvrir</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ============ CONCEPT ============ -->
+  <section class="concept" id="concept">
+    <div class="container">
+      <div class="concept__grid">
+        <div class="concept__text reveal">
+          <span class="eyebrow">Le concept</span>
+          <h2 class="h2">De la mer, à la mer.</h2>
+          <p class="lead">
+            Sea fender bag est né d'une idée simple : redonner vie aux pare-battages usagés.
+          </p>
+          <p>
+            Récupérés sur les ports, les coques et les pontons, ces flotteurs robustes
+            sont réinventés en un rangement parfaitement hermétique. Conçus pour suivre
+            tes aventures sur l'eau comme sur la terre, ils protègent l'essentiel —
+            téléphone, clés, papiers, snacks — partout où l'eau et la poussière
+            menacent.
+          </p>
+          <p class="concept__signature">
+            <span>—</span> Upcycling marin, pensé en Méditerranée.
+          </p>
+        </div>
+        <div class="concept__visual reveal">
+          <div class="concept__photo" style="background-image: url('assets/images/concept-beach.png');"></div>
+          <div class="concept__badge">
+            <span class="concept__badge-num">100%</span>
+            <span class="concept__badge-label">Récup'</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUIT (animation) ============ -->
+  <section class="produit" id="produit">
+    <div class="produit__sticky">
+      <div class="produit__viz">
+        <div class="product-sequence" aria-label="Sea fender bag qui se visse">
+          <img id="productFrame" src="assets/images/fermeture_pare_battage.gif" alt="">
+        </div>
+      </div>
+
+      <div class="produit__steps">
+        <div class="produit__step is-active" data-step="0">
+          <span class="step__num">01</span>
+          <h3 class="step__title">Tu ouvres.</h3>
+          <p class="step__text">Les deux parties se séparent pour libérer l'espace de rangement.</p>
+        </div>
+        <div class="produit__step" data-step="1">
+          <span class="step__num">02</span>
+          <h3 class="step__title">Tu mets tes vêtements.</h3>
+          <p class="step__text">Tu ranges ce que tu veux garder au sec, sans ajouter de sac en plus.</p>
+        </div>
+        <div class="produit__step" data-step="2">
+          <span class="step__num">03</span>
+          <h3 class="step__title">Tu fermes.</h3>
+          <p class="step__text">Le bouchon se revisse sur la partie basse et verrouille le rangement.</p>
+        </div>
+        <div class="produit__step" data-step="3">
+          <span class="step__num">04</span>
+          <h3 class="step__title">C'est hermétique.</h3>
+          <p class="step__text">Tes affaires restent protégées de l'eau pendant le transport ou l'utilisation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ USAGES ============ -->
+  <section class="usages" id="usages">
+    <div class="container">
+      <div class="usages__head reveal">
+        <span class="eyebrow">Pour qui ?</span>
+        <h2 class="h2">Pensé pour ceux qui bougent.</h2>
+        <p class="lead">Sport, aventure, exploration. Sea fender bag t'accompagne là où l'eau, la sueur et la boue ne pardonnent rien.</p>
+      </div>
+
+      <div class="usages__grid">
+        <article class="usage reveal">
+          <div class="usage__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 40 Q32 32 58 40 L54 44 Q32 38 10 44 Z"/>
+              <line x1="20" y1="20" x2="44" y2="56"/>
+              <line x1="44" y1="20" x2="20" y2="56"/>
+              <ellipse cx="20" cy="20" rx="3" ry="2"/>
+              <ellipse cx="44" cy="20" rx="3" ry="2"/>
+            </svg>
+          </div>
+          <h3 class="usage__title">Kayak</h3>
+          <p class="usage__text">Sangle-le sur le pont, glisse-le sous l'élastique. Tes papiers restent au sec.</p>
+        </article>
+
+        <article class="usage reveal">
+          <div class="usage__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="32" cy="44" rx="22" ry="5"/>
+              <line x1="32" y1="8" x2="32" y2="44"/>
+              <line x1="26" y1="12" x2="32" y2="8"/>
+              <line x1="38" y1="12" x2="32" y2="8"/>
+              <circle cx="42" cy="34" r="3"/>
+            </svg>
+          </div>
+          <h3 class="usage__title">Paddle</h3>
+          <p class="usage__text">Fixé sur le D-ring, tu gardes l'esprit léger. Et le téléphone en sécurité.</p>
+        </article>
+
+        <article class="usage reveal">
+          <div class="usage__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 52 L24 28 L34 40 L44 18 L56 52 Z"/>
+              <circle cx="46" cy="14" r="3"/>
+              <path d="M14 52 Q32 48 50 52"/>
+            </svg>
+          </div>
+          <h3 class="usage__title">Randonnée</h3>
+          <p class="usage__text">Accroché au sac, il survit aux averses, aux torrents, aux pauses dans la rosée.</p>
+        </article>
+
+        <article class="usage reveal">
+          <div class="usage__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 56 L24 32 L36 44 L52 20"/>
+              <path d="M52 20 L52 32 M52 20 L40 20"/>
+              <circle cx="20" cy="14" r="4"/>
+              <path d="M20 18 L20 30 L14 42 M20 30 L28 38"/>
+            </svg>
+          </div>
+          <h3 class="usage__title">Escalade</h3>
+          <p class="usage__text">Mousquetonné au harnais, l'essentiel reste à portée. Et étanche en cas d'orage.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MODÈLES ============ -->
+  <section class="modeles" id="modeles">
+    <div class="container">
+      <div class="modeles__head reveal">
+        <span class="eyebrow">Explorer</span>
+        <h2 class="h2">Quatre portes d'entrée.</h2>
+        <p class="lead">Choisis une partie du projet pour découvrir les détails.</p>
+      </div>
+
+      <div class="modeles__grid">
+        <a class="modele modele--choice reveal" href="bags.html">
+          <div class="modele__cover">
+            <img src="assets/images/bags-cover.png" alt="">
+          </div>
+          <span class="modele__index">01</span>
+          <h3 class="modele__name">Bags</h3>
+          <p class="modele__sub">Les rangements</p>
+          <span class="modele__link">Voir la page</span>
+        </a>
+
+        <a class="modele modele--choice reveal" href="cordes.html">
+          <div class="modele__cover modele__cover--cordes">
+            <img src="assets/images/cordes-cover.png" alt="">
+          </div>
+          <span class="modele__index">02</span>
+          <h3 class="modele__name">Cordes</h3>
+          <p class="modele__sub">Les attaches</p>
+          <span class="modele__link">Voir la page</span>
+        </a>
+
+        <a class="modele modele--choice reveal" href="mechanisme.html">
+          <div class="modele__cover modele__cover--mechanisme">
+            <img src="assets/images/mechanisme-cover.png" alt="">
+          </div>
+          <span class="modele__index">03</span>
+          <h3 class="modele__name">Mécanisme</h3>
+          <p class="modele__sub">Le système</p>
+          <span class="modele__link">Voir la page</span>
+        </a>
+
+        <a class="modele modele--choice reveal" href="mon-pare-battage.html">
+          <div class="modele__cover modele__cover--pare-battage">
+            <img src="assets/images/pare-battage-cover.jpg" alt="">
+          </div>
+          <span class="modele__index">04</span>
+          <h3 class="modele__name">Mon pare-battage</h3>
+          <p class="modele__sub">La personnalisation</p>
+          <span class="modele__link">Voir la page</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MANIFESTO ============ -->
+  <section class="manifesto reveal">
+    <div class="container">
+      <p class="manifesto__text">
+        <span>« </span>L'océan donne, l'océan reprend.<br>
+        Entre les deux, il y a ce que l'on choisit d'en faire.<span> »</span>
+      </p>
+      <p class="manifesto__sign">— Sea fender bag</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner reveal">
+        <span class="eyebrow eyebrow--light">Contact</span>
+        <h2 class="h2 h2--light">Une question ? Un projet ?</h2>
+        <p class="lead lead--light">
+          Sea fender bag est encore au stade prototype. Si tu veux suivre l'aventure,
+          collaborer, ou simplement échanger — écris-nous.
+        </p>
+        <a href="mailto:hello@seabumpers.fr" class="btn btn--solid">hello@seabumpers.fr</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo.png" alt="Sea fender bag" class="footer__logo" onerror="this.style.display='none'">
+          <p>Le rangement hermétique<br>né de la mer.</p>
+        </div>
+        <div class="footer__nav">
+          <h4>Navigation</h4>
+          <a href="#concept">Concept</a>
+          <a href="#produit">Produit</a>
+          <a href="#usages">Usages</a>
+          <a href="#modeles">Modèles</a>
+        </div>
+        <div class="footer__info">
+          <h4>Projet</h4>
+          <p>Le Pradet, France</p>
+          <p>Méditerranée</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Sea fender bag — Projet en développement</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>
+
+
+

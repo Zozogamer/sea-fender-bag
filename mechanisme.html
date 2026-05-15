@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#C45D52">
+  <title>Mécanisme — Sea fender bag</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="detail-page mechanism-page">
+  <main>
+    <section class="detail-hero mechanism-hero">
+      <div class="detail-hero__inner">
+        <a class="detail-hero__back" href="index.html#modeles">Retour</a>
+        <span class="eyebrow">Sea fender bag</span>
+        <h1 class="detail-hero__title">Mécanisme</h1>
+        <p class="detail-hero__text">Choisis une partie du mécanisme à explorer.</p>
+      </div>
+    </section>
+
+    <section class="mechanism-choices">
+      <div class="container">
+        <div class="mechanism-grid">
+          <a class="mechanism-card" href="mechanisme-plan.html">
+            <div class="mechanism-card__visual mechanism-card__visual--plan">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <p class="mechanism-card__index">01</p>
+            <h2>Plan</h2>
+            <p>Zone vide pour l'instant.</p>
+          </a>
+
+          <a class="mechanism-card" href="mechanisme-design.html">
+            <div class="mechanism-card__visual mechanism-card__visual--design">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <p class="mechanism-card__index">02</p>
+            <h2>Design</h2>
+            <p>Zone vide pour l'instant.</p>
+          </a>
+
+          <a class="mechanism-card mechanism-card--featured" href="mechanisme-3d.html">
+            <div class="mechanism-card__visual mechanism-card__visual--model">
+              <span class="model-ring model-ring--top"></span>
+              <span class="model-ring model-ring--bottom"></span>
+              <span class="model-thread"></span>
+            </div>
+            <p class="mechanism-card__index">03</p>
+            <h2>3D</h2>
+            <p>Modèle Fusion paramétrique.</p>
+          </a>
+        </div>
+
+        <div class="mechanism-buy">
+          <img src="assets/images/mechanisme-cover.png" alt="">
+          <div>
+            <span class="eyebrow">Pièce seule</span>
+            <h2>Kit mécanisme</h2>
+            <p>La bague mâle et la bague femelle, à commander séparément du bag et des cordes.</p>
+          </div>
+          <button class="btn btn--solid cart-add" type="button" data-id="kit-mecanisme" data-name="Kit mécanisme" data-category="Mécanisme" data-price="25" data-image="assets/images/mechanisme-cover.png">Ajouter - 25 €</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>

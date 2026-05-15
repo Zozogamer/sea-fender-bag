@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#C45D52">
+  <title>Sea fender bag 30</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="detail-page bag-config-page">
+  <main>
+    <section class="bag-config bag-config--compact">
+      <div class="bag-config__media">
+        <img id="bagColorPreview" src="assets/images/gamme/bag-30-navy.png" alt="Sea fender bag 30 bleu marine">
+      </div>
+
+      <div class="bag-config__panel">
+        <a class="detail-hero__back" href="bags.html">Retour aux bags</a>
+        <span class="eyebrow">Bags</span>
+        <h1 class="bag-config__title">Sea fender bag 30</h1>
+        <p class="bag-config__text">Choisis la couleur de la bague. Le visuel se met à jour automatiquement.</p>
+
+        <div class="color-picker" aria-label="Choix de couleur">
+          <button class="color-swatch" type="button" aria-label="Crème" data-name="Crème" data-image="assets/images/gamme/bag-30-cream.png" style="--swatch:#F7C76C"></button>
+          <button class="color-swatch" type="button" aria-label="Corail" data-name="Corail" data-image="assets/images/gamme/bag-30-coral.png" style="--swatch:#E25550"></button>
+          <button class="color-swatch" type="button" aria-label="Rose" data-name="Rose" data-image="assets/images/gamme/bag-30-pink.png" style="--swatch:#FF277D"></button>
+          <button class="color-swatch" type="button" aria-label="Rouge" data-name="Rouge" data-image="assets/images/gamme/bag-30-red.png" style="--swatch:#FF120E"></button>
+          <button class="color-swatch" type="button" aria-label="Ambre" data-name="Ambre" data-image="assets/images/gamme/bag-30-amber.png" style="--swatch:#FFB21D"></button>
+          <button class="color-swatch" type="button" aria-label="Orange" data-name="Orange" data-image="assets/images/gamme/bag-30-orange.png" style="--swatch:#FF8B18"></button>
+          <button class="color-swatch is-selected" type="button" aria-label="Bleu marine" data-name="Bleu marine" data-image="assets/images/gamme/bag-30-navy.png" style="--swatch:#252A68"></button>
+          <button class="color-swatch" type="button" aria-label="Bleu clair" data-name="Bleu clair" data-image="assets/images/gamme/bag-30-light-blue.png" style="--swatch:#58B8CD"></button>
+          <button class="color-swatch" type="button" aria-label="Jaune" data-name="Jaune" data-image="assets/images/gamme/bag-30-yellow.png" style="--swatch:#FFFF13"></button>
+          <button class="color-swatch" type="button" aria-label="Bleu" data-name="Bleu" data-image="assets/images/gamme/bag-30-blue.png" style="--swatch:#126DFF"></button>
+          <button class="color-swatch" type="button" aria-label="Citron" data-name="Citron" data-image="assets/images/gamme/bag-30-lime.png" style="--swatch:#A4BD00"></button>
+          <button class="color-swatch" type="button" aria-label="Cyan" data-name="Cyan" data-image="assets/images/gamme/bag-30-cyan.png" style="--swatch:#2CCBEA"></button>
+          <button class="color-swatch" type="button" aria-label="Turquoise" data-name="Turquoise" data-image="assets/images/gamme/bag-30-turquoise.png" style="--swatch:#4FDCC7"></button>
+        </div>
+
+        <p class="color-picker__label">Couleur sélectionnée : <strong id="bagColorName">Bleu marine</strong></p>
+        <button class="btn btn--solid cart-add" type="button" data-cart-dynamic="color" data-id="bag-30" data-name="Sea fender bag 30" data-category="Bag" data-price="69">Ajouter au panier - 69 €</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const preview = document.getElementById('bagColorPreview');
+    const colorName = document.getElementById('bagColorName');
+    const swatches = document.querySelectorAll('.color-swatch');
+
+    swatches.forEach((swatch) => {
+      swatch.addEventListener('click', () => {
+        swatches.forEach((item) => item.classList.remove('is-selected'));
+        swatch.classList.add('is-selected');
+        preview.src = swatch.dataset.image;
+        preview.alt = `Sea fender bag 30 ${swatch.dataset.name}`;
+        colorName.textContent = swatch.dataset.name;
+      });
+    });
+  </script>
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>

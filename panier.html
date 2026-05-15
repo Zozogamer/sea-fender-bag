@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#C45D52">
+  <title>Panier - Sea fender bag</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="detail-page cart-page">
+  <main>
+    <section class="detail-hero cart-hero">
+      <div class="detail-hero__inner">
+        <a class="detail-hero__back" href="index.html#modeles">Retour au site</a>
+        <span class="eyebrow">Commande</span>
+        <h1 class="detail-hero__title">Panier</h1>
+        <p class="detail-hero__text">Ajoute un bag, une corde ou le mécanisme séparément, puis prépare ta demande.</p>
+      </div>
+    </section>
+
+    <section class="cart-section">
+      <div class="container">
+        <p class="cart-empty" id="cartEmpty">Ton panier est vide pour l'instant.</p>
+        <div class="cart-list" id="cartItems"></div>
+
+        <div class="cart-summary">
+          <span>Total</span>
+          <strong id="cartTotal">0,00 €</strong>
+        </div>
+
+        <div class="cart-actions">
+          <a class="btn btn--solid" id="cartCheckout" href="mailto:hello@seabumpers.fr?subject=Commande%20Sea%20fender%20bag">Demander la commande</a>
+          <button class="btn btn--light" type="button" id="cartClear">Vider le panier</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>

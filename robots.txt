@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zozogamer.github.io/sea-fender-bag/sitemap.xml

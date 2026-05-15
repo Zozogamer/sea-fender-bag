@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#C45D52">
+  <title>3D — Mécanisme</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="detail-page mechanism-page">
+  <main>
+    <section class="mechanism-model">
+      <div class="container mechanism-model__grid">
+        <div class="mechanism-model__viewer" id="mechanism3d" aria-label="Modèle 3D du mécanisme"></div>
+
+        <div class="mechanism-model__content">
+          <a class="detail-hero__back" href="mechanisme.html">Retour au mécanisme</a>
+          <span class="eyebrow">Modèle 3D</span>
+          <h1 class="detail-hero__title">Bague paramétrique</h1>
+          <p class="detail-hero__text">Prévisualisation 3D du mécanisme de vissage.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/vendor/three.min.js"></script>
+  <script src="assets/vendor/OrbitControls.global.js"></script>
+  <script src="assets/js/mechanism-3d.js"></script>
+</body>
+</html>

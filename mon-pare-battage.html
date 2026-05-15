@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#C45D52">
+  <title>Mon pare-battage - Sea fender bag</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="detail-page custom-fender-page">
+  <main>
+    <section class="detail-hero custom-fender-hero">
+      <div class="detail-hero__inner">
+        <a class="detail-hero__back" href="index.html#modeles">Retour</a>
+        <span class="eyebrow">Sea fender bag</span>
+        <h1 class="detail-hero__title">Mon pare-battage</h1>
+        <p class="detail-hero__text">Une demande sur mesure avec les dimensions, le type de pare-battage et une photo de référence.</p>
+      </div>
+    </section>
+
+    <section class="custom-fender">
+      <div class="container">
+        <form class="custom-fender__form" id="customFenderForm">
+          <div class="custom-fender__intro">
+            <span class="eyebrow">Questionnaire</span>
+            <h2>Créer une demande</h2>
+          </div>
+
+          <div class="custom-fender__grid">
+            <fieldset class="custom-field custom-field--wide">
+              <legend>Type de pare-battage</legend>
+              <div class="choice-grid">
+                <label class="choice-card">
+                  <input type="radio" name="type" value="Cylindrique" checked>
+                  <span>Cylindrique</span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="type" value="Spherique">
+                  <span>Sphérique</span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="type" value="Plat">
+                  <span>Plat</span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="type" value="Autre">
+                  <span>Autre</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <label class="custom-field">
+              <span>Longueur</span>
+              <div class="input-unit">
+                <input type="number" name="longueur" min="1" placeholder="50">
+                <small>cm</small>
+              </div>
+            </label>
+
+            <label class="custom-field">
+              <span>Diamètre</span>
+              <div class="input-unit">
+                <input type="number" name="diametre" min="1" placeholder="13">
+                <small>cm</small>
+              </div>
+            </label>
+
+            <label class="custom-field">
+              <span>Quantité</span>
+              <input type="number" name="quantite" min="1" placeholder="1">
+            </label>
+
+            <label class="custom-field">
+              <span>Couleur souhaitée</span>
+              <select name="couleur">
+                <option>Jaune</option>
+                <option>Rouge</option>
+                <option>Bleu marine</option>
+                <option>Bleu vif</option>
+                <option>Orange</option>
+                <option>Rose</option>
+                <option>Turquoise</option>
+                <option>Vert</option>
+                <option>Autre</option>
+              </select>
+            </label>
+
+            <label class="custom-field">
+              <span>Usage principal</span>
+              <select name="usage">
+                <option>Bateau</option>
+                <option>Kayak</option>
+                <option>Paddle</option>
+                <option>Mouillage</option>
+                <option>Rando / transport</option>
+                <option>Autre</option>
+              </select>
+            </label>
+
+            <label class="custom-field">
+              <span>Type d'attache</span>
+              <select name="attache">
+                <option>Oeillet haut</option>
+                <option>Oeillet haut et bas</option>
+                <option>Corde</option>
+                <option>Lanière</option>
+                <option>Je ne sais pas</option>
+              </select>
+            </label>
+
+            <label class="custom-field custom-field--wide">
+              <span>Détails utiles</span>
+              <textarea name="details" rows="5" placeholder="Forme spéciale, contrainte de place, bateau, rangement, couleur précise..."></textarea>
+            </label>
+
+            <div class="custom-field custom-field--wide photo-upload">
+              <span>Photo du pare-battage</span>
+              <label class="photo-upload__drop" for="fenderPhoto">
+                <input id="fenderPhoto" type="file" name="photo" accept="image/*">
+                <span class="photo-upload__label">Ajouter une photo</span>
+                <img id="photoPreview" alt="">
+              </label>
+            </div>
+
+            <label class="custom-field">
+              <span>Nom</span>
+              <input type="text" name="nom" placeholder="Votre nom">
+            </label>
+
+            <label class="custom-field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="votre@email.com">
+            </label>
+          </div>
+
+          <div class="custom-fender__footer">
+            <button class="btn btn--solid" type="submit">Envoyer la demande</button>
+            <p class="custom-fender__status" id="customFenderStatus" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/custom-fender.js"></script>
+</body>
+</html>
