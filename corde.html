@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#C45D52">
+  <title>Corde - Sea fender bag</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="detail-page rope-detail-page">
+  <main>
+    <section class="rope-detail">
+      <div class="rope-detail__media" id="ropeColorBackdrop">
+        <img id="ropeImage" src="assets/images/cordes/cloud-strap.png" alt="">
+      </div>
+
+      <div class="rope-detail__panel">
+        <a class="detail-hero__back" href="cordes.html">Retour aux cordes</a>
+        <span class="eyebrow">Cordes</span>
+        <h1 class="bag-config__title" id="ropeName">Cloud Strap</h1>
+        <p class="bag-config__text">Choisis la couleur de ta corde avant de l'ajouter au panier.</p>
+        <p class="rope-detail__price" id="ropePrice">€55,00</p>
+
+        <div class="rope-detail__palette" id="ropePalette" aria-label="Choix de couleur"></div>
+
+        <p class="color-picker__label">Couleur sélectionnée : <strong id="ropeColorName">Abysse</strong></p>
+        <button class="btn btn--solid cart-add" id="ropeAddButton" type="button">Ajouter au panier</button>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/rope-detail.js"></script>
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>
