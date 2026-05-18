@@ -1124,11 +1124,18 @@ ul { list-style: none; }
     radial-gradient(circle at 50% 48%, color-mix(in srgb, var(--selected-rope-color, #073B4C) 28%, transparent), transparent 46%),
     linear-gradient(180deg, #efefea 0%, #d8d8d2 100%);
 }
-.rope-detail__media img {
+.rope-detail__media img,
+.rope-detail__canvas {
   width: min(78vw, 620px);
   max-height: 72vh;
   object-fit: contain;
   filter: drop-shadow(0 24px 36px rgba(27, 42, 58, 0.22));
+}
+.rope-detail__media img[hidden] {
+  display: none;
+}
+.rope-detail__canvas {
+  height: auto;
 }
 .rope-detail__panel {
   min-height: 100vh;
