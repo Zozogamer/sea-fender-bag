@@ -91,7 +91,7 @@ if (ropeImage && ropeName && ropePrice && ropePalette && ropeAddButton) {
 
   ropeAddButton.dataset.id = ropeId;
   ropeAddButton.dataset.name = product.name;
-  ropeAddButton.dataset.category = 'Corde';
+  ropeAddButton.dataset.category = 'Bout';
   ropeAddButton.dataset.price = String(product.price);
   ropeAddButton.dataset.image = product.image;
   ropeAddButton.textContent = `Ajouter au panier - ${formatRopePrice(product.price)}`;
