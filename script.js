@@ -111,4 +111,24 @@ document.addEventListener('DOMContentLoaded', () => {
     card.style.transitionDelay = `${i * 0.08}s`;
   });
 
+  /* ---------- VIDEO AU SURVOL DE PLAGE ---------- */
+  document.querySelectorAll('.usage--video').forEach(card => {
+    const video = card.querySelector('video');
+    if (!video) return;
+
+    const playVideo = () => {
+      video.currentTime = 0;
+      video.play().catch(() => {});
+    };
+    const pauseVideo = () => {
+      video.pause();
+      video.currentTime = 0;
+    };
+
+    card.addEventListener('mouseenter', playVideo);
+    card.addEventListener('mouseleave', pauseVideo);
+    card.addEventListener('focusin', playVideo);
+    card.addEventListener('focusout', pauseVideo);
+  });
+
 });
