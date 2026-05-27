@@ -1270,6 +1270,47 @@ ul { list-style: none; }
   height: auto;
   margin: 0;
 }
+.mechanism-design {
+  padding: 0 0 clamp(4rem, 9vw, 7rem);
+}
+.mechanism-design__figure {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: clamp(0.8rem, 2vw, 1.2rem);
+  background: #fffdf8;
+  border: 1px solid rgba(27, 42, 58, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 32px 70px -38px rgba(27, 42, 58, 0.32);
+}
+.mechanism-design__figure img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #f7f5ef;
+  border-radius: 6px;
+}
+.mechanism-design__figure figcaption {
+  padding: 1rem 0.35rem 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--ink-soft);
+}
+.mechanism-design__figure span {
+  color: var(--terracotta);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.mechanism-design__figure strong {
+  max-width: 520px;
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  font-weight: 500;
+  text-align: right;
+}
 .mechanism-hero {
   padding-bottom: clamp(2rem, 4vw, 3rem);
 }
