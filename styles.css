@@ -768,6 +768,10 @@ ul { list-style: none; }
   object-fit: contain;
   transition: transform 0.6s var(--ease);
 }
+.modele__cover--bags img {
+  object-fit: cover;
+  object-position: center;
+}
 .modele__cover--cordes img {
   object-fit: cover;
 }
